@@ -57,6 +57,10 @@ The investigation used evidence from:
 
 A clean baseline was captured before the attack so that legitimate system activity could be compared against post-compromise behaviour.
 
+### Splunk Environment
+
+![Splunk Environment](images/splunk-environment.png)
+
 ## SIEM Verification
 
 Log ingestion was first validated in Splunk using:
@@ -114,6 +118,10 @@ This provided evidence including:
 - timestamp;
 - successful session establishment.
 
+ ### SSH Investigation Evidence
+
+![SSH Investigation](images/ssh-investigation.png)
+
 ### SOC Interpretation
 
 A successful SSH login becomes more significant when it follows suspicious web activity or credential exposure.
@@ -145,6 +153,10 @@ During the compromise:
 MD5 hashes had been recorded before the attack.
 
 The hashes were recalculated afterward and compared with the baseline, providing evidence that file contents had changed.
+
+### File Integrity Evidence
+
+![File Integrity Comparison](images/file-integrity-comparison.png)
 
 ### SOC Interpretation
 
@@ -205,6 +217,10 @@ File Tampering
 ```
 
 This was the most useful part of the project from a SOC perspective because it demonstrated how multiple individual log events can be combined to reconstruct a complete security incident.
+
+### Correlated Attack Timeline
+
+![Splunk Attack Timeline](images/splunk-attack-timeline.png)
 
 ## Detection Opportunities
 
